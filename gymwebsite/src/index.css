@@ -5,7 +5,7 @@
 :root {
 }
 .top-content-container {
-    height:500px;
+    height:670px;
 }
 body {
     margin: 0px;
@@ -16,6 +16,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+a {
+    text-decoration: none;
 }
 h1{
     font-size: 100px;
@@ -50,6 +53,7 @@ nav {
     font-size: 20px;
     cursor: pointer;
     padding:20px;
+    color: white;
     margin-left: 20px;
 }
 .navbar-item:hover {
@@ -62,11 +66,13 @@ nav {
     margin-top: 100px;
 }
 .header-image {
-    position: fixed;
+    position: absolute;
     top:0;
+    margin-top: 100px;
     left:0;
     width:100%;
     z-index:-1;
+    background-color: white;
 }
 main {
     margin-top: 10% auto;
@@ -187,7 +193,7 @@ main {
     background-color: rgb(255, 106, 60);
     border-radius: 20px;
     border: 10px solid white;
-    justify-content: left;
+    justify-content: left;  
     align-items: left;
     width: 50%;
     text-align: left;
@@ -213,4 +219,117 @@ main {
     width: 50px;
     height: 50px;
     margin-top: -0px;
+}
+
+.main-plan-container {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:130px
+}
+.main-plan-cell1 {
+    width: 285px;
+    height: 267px;
+    background: #F7F7F7;
+    border: 5px solid #FF7D54;
+    border-radius: 19px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    transition: 0.2s ease all;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #FF612F;
+}
+.main-plan-cell2 {
+    width: 314px;
+    text-align: center;
+    height: 294px;
+    background: #F7F7F7;
+    border: 6px solid #FF612F;
+    border-radius: 19px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #FF612F;
+}
+.main-plan-cell1:hover {
+    transform: scale(1.07);;
+}
+.main-plan-cell2:hover {
+    transform: scale(1.07);;
+}
+.main-plan-header-h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #363636;
+}
+.main-plan-cell-p1 {
+    width: 249px;
+    height: 92px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 0px;
+    margin-left: 8px;
+    color: #6D6D6D;
+}
+.main-plan-cell-p2 {
+    width: 249px;
+    height: 92px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 0px;
+    margin-left: 30px;
+    color: #6D6D6D;
+}
+.main-plan-cell2-rectangle {
+    margin: 0px;
+    width: 197px;
+    height: 33px;
+    margin-left: 50px;
+    background-color: #FF7F56;
+    align-items: center;
+    justify-content: center;
+}
+.main-plan-cell2-rectangle-p {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding: 8px;
+}
+.main-cell-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-top: 40px;
+
+    color: #FF612F;
 }

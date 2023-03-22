@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FreedforFree.github.io/static/css/main.f5bdd694.css",
+    "main.js": "/FreedforFree.github.io/static/js/main.3801ab37.js",
+    "index.html": "/FreedforFree.github.io/index.html",
+    "main.f5bdd694.css.map": "/FreedforFree.github.io/static/css/main.f5bdd694.css.map",
+    "main.3801ab37.js.map": "/FreedforFree.github.io/static/js/main.3801ab37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5bdd694.css",
+    "static/js/main.3801ab37.js"
+  ]
+}
