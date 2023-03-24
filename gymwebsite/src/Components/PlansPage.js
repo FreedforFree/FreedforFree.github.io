@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer.js";
 export default class PlansPage extends React.Component{
     render() {
         return(
             <div>
                 <div className="top-content-container">
                         <nav className="navbar">
+                            <div style={{"margin-right":"14%"}}>
+                                <Link to="/">
+                                    <img src="./images/Logo.png" width="130px" height="75px" alt="City Gym Logo" />
+                                </Link>
+                            </div>
                             <Link to="/">
                                 <p className="navbar-item">Home</p>
                             </Link>
@@ -23,7 +29,7 @@ export default class PlansPage extends React.Component{
                             <img className="header-image" src="./images/man_holding_dumbbell.jpg" alt="man holding a dumbbell">
                             </img>
                             <div className="headline-text">
-                                <h1>Our Plans</h1>
+                                <h1 style={{"margin-top":"100px"}}>Our Plans</h1>
                             </div>
                         </header>
                 </div>
@@ -55,6 +61,7 @@ export default class PlansPage extends React.Component{
                             </Link>
                     </div>
                 </main>
+                <Footer />
             </div>
         )
     }

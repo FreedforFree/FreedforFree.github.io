@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import Footer from "./Footer";
 export default class Checkout extends React.Component{
     constructor(props) {
         super(props);
@@ -55,6 +55,11 @@ export default class Checkout extends React.Component{
         return(
         <div className="checkout-page">
             <nav className="navbar">
+                    <div style={{"margin-right":"14%"}}>
+                        <Link to="/">
+                            <img src="./images/Logo.png" width="130px" height="75px" alt="City Gym Logo" />
+                        </Link>
+                    </div>
                     <Link to="/">
                         <p className="navbar-item">Home</p>
                     </Link>
@@ -67,12 +72,13 @@ export default class Checkout extends React.Component{
                     <Link to="/About">
                         <p className="navbar-item">About us</p>
                     </Link>
-            </nav>
+                </nav>
             <main className="main-checkout-container">
                 <form className="checkout-form">
                 <div className="main-checkout-left-container">
                     <div className="checkout-picture-banner">
                         <h4 className="checkout-picture-banner-h4">1% better every day.</h4>
+                        <img src="./images/Logo.png" alt="City Gym Logo" height="100px"/>
                     </div>
                     <img className="checkout-picture" src="./images/Checkout Picture.jpg" width="500px" height="775px" alt="Man Posing" />
                 </div>
@@ -114,6 +120,7 @@ export default class Checkout extends React.Component{
                 </div>
                 </form>
             </main>
+            <Footer />
         </div>
         )
     }
