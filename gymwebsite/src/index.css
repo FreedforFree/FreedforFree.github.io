@@ -35,6 +35,14 @@ h3 {
 h4 {
     font-size: 25px;
 }
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-left:30px;
+    margin:0px;
+}
 p{
     font-size: 1.2em;
 }
@@ -336,6 +344,9 @@ main {
     width:100%
 }
 .main-checkout-container {
+    width: 100%;
+}
+.checkout-form {
     padding: 50px;
     margin-top: 100px;
     background-color: white;
@@ -350,11 +361,31 @@ main {
     height: 775px;
     border: 1px solid black;
     margin-left: 30px;
+    position: relative;
     display: inline-block;
     overflow: hidden;
 }
 .checkout-picture {
     margin-left: -40px;
+    display: block;
+}
+.checkout-picture-banner {
+    position: absolute;
+    background-color: #FF612F;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 100%;
+}
+.checkout-picture-banner-h4 {
+    letter-spacing: 0.1em;
+    margin:0px;
+    padding:30px
 }
 .main-checkout-right-container {
     width: 768px;
@@ -366,7 +397,7 @@ main {
 .personal-info-fields {
     padding: 65px;
     width: 100%;
-    height: 462px;
+    height: 400px;
     background: rgb(221, 221, 221);
     display:flex;
     flex-direction: column;
@@ -392,7 +423,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 249px;
+    height: 375px;
     background: rgb(221, 221, 221)
 }
 .payment-method-container-row {
@@ -402,7 +433,8 @@ main {
     justify-content: space-evenly;
     padding:40px;
     padding-top: 26px;
-    height: 249px;
+    padding-bottom: 20px;
+    height: max-content;
     background: rgb(221, 221, 221)
 }
 .payment-method-container {
@@ -422,10 +454,35 @@ main {
 .payment-method-container:active {
     transform: scale(0.93);
 }
+.plan-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 100px;
+    padding-top: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+}
+.plan-selector {
+    border: 1px solid gray;
+    width: 315px;
+    text-align: center;
+}
+.total-price {
+    background-color: white;
+    width:315px;
+    border: 1px solid gray;
+    color: black;
+    display: flex;
+    align-items: center;
+}
 .checkout-button {
     background-color: #FF612F;
     text-align: center;
     cursor: pointer;
+    color: white;
+    border: none;
 }
 .checkout-button:active {
     background-color: #af4221;

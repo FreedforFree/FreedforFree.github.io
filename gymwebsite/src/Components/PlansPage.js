@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 export default class PlansPage extends React.Component{
-    handleClick = () =>{
-    }
     render() {
         return(
             <div>
